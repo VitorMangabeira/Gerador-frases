@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/css/img/iconFrase.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gerador de Frases || TJML</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <!-- <img src="" alt=""> -->
+        <h1>TJML</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#linkSobre">Sobre</a></li>
+            <li><a href="#linkContato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <br />
+      <h1>Gerador de Frases</h1>
+
+      <br /><br />
+      <div id="frase"></div>
+
+      <button id="next_btn">
+        <span class="button_top"> GERAR </span>
+      </button>
+
+      <br />
+    </main>
+
+    <div id="sobre">
+      <div id="box">
+        <div id="box1">
+          <div id="nos">
+            <hr />
+            <h4>Sobre Nós</h4>
+            <a name="linkSobre"></a>
+          </div>
+          <br/>
+          <h2>Sejam Bem-Vindos ao Gerador de Frases!</h2>
+          <p>
+            O grupo TJML é composto por quatro programadores dedicados que
+            compartilham a missão de disseminar seus conhecimentos em
+            desenvolvimento de sistemas. Nesse contexto, eles se empenharam na
+            criação de um sistema voltado para o apoio à saúde mental.
+            Reconhecendo a importância desse tema na sociedade atual, o grupo
+            TJML busca utilizar sua expertise para fornecer uma plataforma que
+            ofereça recursos e ferramentas para promover o bem-estar emocional e
+            mental, demonstrando assim o compromisso em utilizar a tecnologia
+            para causar um impacto positivo na vida das pessoas.
+          </p>
+        </div>
+        <div id="box2">
+          <img
+            src="assets/css/img/phrases.jpg"
+            alt="Post-it com diversas frases"
+          />
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="">
+        <div class="contato">
+          <a name="linkContato"></a>
+          <h1>Contato</h1>
+
+          <p>
+            Quer contribuir com nosso projeto?
+
+            <br />
+            Entre em contato pelo formulário
+          </p>
+        </div>
+
+        <form id="contact">
+          <div class="label-input">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" required placeholder="" />
+          </div>
+
+          <div class="label-input">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" required />
+          </div>
+
+          <div class="label-input">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              required
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              cols="33"
+            ></textarea>
+          </div>
+
+          <button id="enviar" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="assets/js/script.js" type="module"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </body>
+</html>
